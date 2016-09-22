@@ -21,18 +21,25 @@ const ticker = new TickerStream({
   phony: phony
 });
 
-console.log('example:ticker:ondata');
-ticker.on('data', (data) => {
-  console.log(`example:ondata:${util.inspect(data)}`);
-});
-
 setTimeout(function() {
-  console.log('example:ticker:pause');
-  ticker.pause();
+  console.log('example:ticker:ondata');
+  ticker.on('data', (data) => {
+    console.log(`example:ondata:${util.inspect(data)}`);
+  });
 
   setTimeout(function() {
-    console.log('example:ticker:resume');
-    ticker.resume();
+    console.log('example:ticker:pause');
+    ticker.pause();
+
+    setTimeout(function() {
+      console.log('example:ticker:resume');
+      ticker.resume();
+    }, 2000);
   }, 1000);
 }, 1000);
 
+setInterval(function() {
+  const rl = ticker._readableState.length;
+  const tl = ticker._tickerState.ticks.length;
+  console.log(`example:stream:length: ${rl}, ticker:length: ${tl}`);
+}, 100);
