@@ -1,0 +1,15 @@
+{
+  "name": "node-ticker-stream",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./lib/TickerStream.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . || true"
+  },
+  "author": "ryo0301",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^3.5.0"
+  }
+}
