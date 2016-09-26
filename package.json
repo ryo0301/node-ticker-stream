@@ -3,13 +3,19 @@
   "version": "0.1.0",
   "description": "",
   "main": "./lib/TickerStream.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryo0301/node-ticker-stream.git"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint . || true"
+    "lint": "eslint lib",
+    "test": "npm run lint && mocha"
   },
   "author": "ryo0301",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^3.5.0"
+    "chai": "^3.5.0",
+    "eslint": "^3.6.0",
+    "mocha": "^3.0.2"
   }
 }
