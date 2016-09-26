@@ -1,4 +1,4 @@
-### https://raw.github.com/github/gitignore/afbff9027d02ccfc680e031f6c295f79ad61662d/Node.gitignore
+### https://raw.github.com/github/gitignore/0b2d7ae1aa11a4bbafdce2e624477b960a2c018d/Node.gitignore
 
 # Logs
 logs
@@ -41,3 +41,20 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+
+### https://raw.github.com/github/gitignore/0b2d7ae1aa11a4bbafdce2e624477b960a2c018d/Global/Vim.gitignore
+
+# swap
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+# session
+Session.vim
+# temporary
+.netrwhist
+*~
+# auto-generated tag files
+tags
