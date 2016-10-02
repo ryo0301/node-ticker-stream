@@ -1,18 +1,24 @@
 {
   "name": "node-ticker-stream",
   "version": "0.1.0",
-  "description": "",
+  "description": "node-ticker-stream send dummy data at random intervals.",
   "main": "./lib/TickerStream.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/ryo0301/node-ticker-stream.git"
   },
+  "keywords": [
+    "stream",
+    "test",
+    "demo",
+    "dummy"
+  ],
   "scripts": {
     "lint": "eslint lib",
     "test": "npm run lint && mocha"
   },
-  "author": "ryo0301",
-  "license": "ISC",
+  "author": "ryo0301 <ryo0301+npm@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint": "^3.7.0",
