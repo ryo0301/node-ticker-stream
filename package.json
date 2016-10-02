@@ -1,6 +1,6 @@
 {
   "name": "node-ticker-stream",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "node-ticker-stream send dummy data at random intervals.",
   "main": "./lib/TickerStream.js",
   "repository": {
