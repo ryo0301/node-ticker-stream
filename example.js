@@ -37,9 +37,3 @@ setTimeout(function() {
     }, 2000);
   }, 1000);
 }, 1000);
-
-setInterval(function() {
-  const rl = ticker._readableState.length;
-  const tl = ticker._tickerState.ticks.length;
-  console.log(`example:stream:length: ${rl}, ticker:length: ${tl}`);
-}, 100);
