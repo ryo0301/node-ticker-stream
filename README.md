@@ -3,7 +3,7 @@
 ## Simple example
 
 ```js
-const TickerStream = require('node-ticker-stream');
+const TickerStream = require('ticker-stream');
 
 const ticker = new TickerStream();
 ticker.on('data', function(data) {
@@ -21,7 +21,7 @@ ticker.on('data', function(data) {
 ## Optional arguments
 
 ```js
-const TickerStream = require('node-ticker-stream');
+const TickerStream = require('ticker-stream');
 
 var i = 0;
 const ticker = new TickerStream({
